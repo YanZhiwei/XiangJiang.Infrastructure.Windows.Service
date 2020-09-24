@@ -7,7 +7,7 @@ using XiangJiang.Infrastructure.Abstractions;
 using XiangJiang.Infrastructure.Abstractions.Enums;
 using XiangJiang.Infrastructure.Abstractions.Models;
 
-namespace XiangJiang.Infrastructure.Windows.Service
+namespace XiangJiang.Windows.Service
 {
     /// <summary>
     ///     服务配置
