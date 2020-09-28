@@ -3,9 +3,9 @@ using System.Diagnostics;
 using Topshelf;
 using Topshelf.HostConfigurators;
 using XiangJiang.Core;
-using XiangJiang.Infrastructure.Abstractions;
-using XiangJiang.Infrastructure.Abstractions.Enums;
-using XiangJiang.Infrastructure.Abstractions.Models;
+using XiangJiang.Windows.Abstractions;
+using XiangJiang.Windows.Abstractions.Enums;
+using XiangJiang.Windows.Abstractions.Models;
 
 namespace XiangJiang.Windows.Service
 {
@@ -40,6 +40,7 @@ namespace XiangJiang.Windows.Service
                                 Debugger.Launch();
                             Debugger.Break();
                         }
+
                         s.Start(args, option);
                     });
                     service.WhenStopped(s => s.Stop());
@@ -58,7 +59,7 @@ namespace XiangJiang.Windows.Service
                 SetStartPattern(host, option);
             });
 
-            var exitCode = (int)Convert.ChangeType(rc, rc.GetTypeCode());
+            var exitCode = (int) Convert.ChangeType(rc, rc.GetTypeCode());
             Environment.ExitCode = exitCode;
         }
 

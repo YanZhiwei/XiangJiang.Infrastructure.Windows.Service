@@ -15,7 +15,7 @@
   <ItemGroup>
     <PackageReference Include="Topshelf" Version="4.2.1" />
     <PackageReference Include="XiangJiang" Version="1.0.7" />
-    <PackageReference Include="XiangJiang.Infrastructure.Abstractions" Version="1.0.3" />
+    <PackageReference Include="XiangJiang.Windows.Abstractions" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
