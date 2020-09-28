@@ -1,28 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>YanZhiwei</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/YanZhiwei/XiangJiang.Infrastructure.Windows.Service</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/YanZhiwei/XiangJiang.Infrastructure.Windows.Service</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/YanZhiwei/XiangJiang.Windows.Service</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YanZhiwei/XiangJiang.Windows.Service</RepositoryUrl>
     <PackageIcon>nugetico.png</PackageIcon>
     <Product>XiangJiang</Product>
-    <Description>Windows Service tool library based on Topshelf,using the document: https://github.com/YanZhiwei/XiangJiang.Infrastructure.Windows.Service/wiki; Welcome to pull request or star.</Description>
+    <Description>Windows Service tool library based on Topshelf,using the document: https://github.com/YanZhiwei/XiangJiang.Windows.Service/wiki; Welcome to pull request or star.</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Topshelf" Version="4.2.1" />
     <PackageReference Include="XiangJiang" Version="1.0.7" />
     <PackageReference Include="XiangJiang.Windows.Abstractions" Version="1.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\.assets\nugetico.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
